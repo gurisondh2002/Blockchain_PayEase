@@ -1,0 +1,57 @@
+.customContainer {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding-left: 1.25rem;
+}
+
+.customMainContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.latestTransac {
+    color: #fff;
+    font-size: 1.875rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.customTable {
+    width: 100%;
+    overflow-x: auto; 
+}
+
+.customTable th,
+.customTable td {
+    padding: 1rem;
+    color: #fff;
+}
+
+.customTable th {
+    background-color: #181918;
+}
+
+.customTable td {
+    background-color: #181918;
+}
+
+.customLink {
+    color: #fff;
+}
+
+.customLink:hover {
+    color: #37c7da;
+}
+
+@media screen and (max-width: 768px) {
+    .customTable {
+        overflow-x: auto;
+    }
+
+    .customTable td,
+    .customTable th {
+        white-space: nowrap; 
+    }
+}

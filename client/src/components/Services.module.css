@@ -1,0 +1,221 @@
+.flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.customStyle {
+    display: flex;
+    flex-direction: row;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    flex-wrap: wrap;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+
+.servicesClass {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.headingServices {
+    color: #fff;
+    font-size: 1.875rem;
+    /* 30px */
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.customParagraph {
+    text-align: left;
+    margin-top: 0.5rem;
+    /* Equivalent to my-2 */
+    margin-bottom: 0.5rem;
+    /* Equivalent to my-2 */
+    color: #fff;
+    font-weight: 300;
+    /* Equivalent to font-light */
+    width: 100%;
+}
+
+.customFlexContainer {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.customContForIcon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.customContForIcon:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer {
+    width: 2.5rem;
+    /* Equivalent to w-10 */
+    height: 2.5rem;
+    /* Equivalent to h-10 */
+    border-radius: 50%;
+    /* Equivalent to rounded-full */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2952E3;
+}
+
+.customFlexContainerDesc {
+    margin-left: 1.25rem;
+    /* Equivalent to ml-5 */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nameContaienr {
+    margin-top: 0.5rem;
+    /* Equivalent to mt-2 */
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.descP {
+    margin-top: 0.25rem;
+    /* Equivalent to mt-1 */
+    color: #fff;
+    font-size: 0.875rem;
+    /* Equivalent to text-sm */
+    width: 75%;
+}
+
+.customContForIcon1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.customContForIcon1:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer1 {
+    width: 2.5rem;
+    /* Equivalent to w-10 */
+    height: 2.5rem;
+    /* Equivalent to h-10 */
+    border-radius: 50%;
+    /* Equivalent to rounded-full */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8945F8;
+}
+
+.customFlexContainerDesc1 {
+    margin-left: 1.25rem;
+    /* Equivalent to ml-5 */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nameContaienr1 {
+    margin-top: 0.5rem;
+    /* Equivalent to mt-2 */
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.descP1 {
+    margin-top: 0.25rem;
+    /* Equivalent to mt-1 */
+    color: #fff;
+    font-size: 0.875rem;
+    /* Equivalent to text-sm */
+    width: 75%;
+}
+
+.customContForIcon2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    padding: 0.75rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.customContForIcon2:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.iconContainer2 {
+    width: 2.5rem;
+    /* Equivalent to w-10 */
+    height: 2.5rem;
+    /* Equivalent to h-10 */
+    border-radius: 50%;
+    /* Equivalent to rounded-full */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F84550;
+}
+
+.customFlexContainerDesc2 {
+    margin-left: 1.25rem;
+    /* Equivalent to ml-5 */
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.nameContaienr2 {
+    margin-top: 0.5rem;
+    /* Equivalent to mt-2 */
+    color: #fff;
+    font-size: 1.125rem;
+}
+
+.descP2 {
+    margin-top: 0.25rem;
+    /* Equivalent to mt-1 */
+    color: #fff;
+    font-size: 0.875rem;
+    /* Equivalent to text-sm */
+    width: 75%;
+}
+
+@media (min-width: 768px) {
+    .customParagraph {
+        width: 75%;
+        /* Equivalent to md:w-9/12 */
+    }
+}

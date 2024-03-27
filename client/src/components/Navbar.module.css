@@ -1,0 +1,68 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+  }
+  
+  .menu {
+    list-style-type: none;
+    display: flex;
+    color: white;
+  }
+  
+  .menuItem {
+    margin-right: 1rem;
+    margin-top: -0.1rem;
+    cursor: pointer;
+  }
+  
+  .menuItem.login {
+    background-color: #2952e3;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: -0.6rem;
+  }
+  
+  .menuItem.login:hover {
+    background-color: #2546bd;
+  }
+  
+  .menuToggle {
+    display: none;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 768px) {
+    .menu {
+      display: none;
+      position: absolute;
+      top: 3rem;
+      right: 2rem;
+      background-color: #fff; /* Change background color as needed */
+      border-radius: 5px;
+      padding: 1rem;
+      color: black;
+      gap:10px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  
+    .menu.show {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .menuItem.login {
+      background-color: #2952e3;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+      cursor: pointer;
+      margin-top: 0.6rem;
+    }
+  
+    .menuToggle {
+      display: block;
+    }
+  }
+  

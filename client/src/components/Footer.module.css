@@ -1,0 +1,76 @@
+.footerContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem; 
+    margin-bottom: -30px;
+  }
+  
+  .logoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .logo {
+    width: 8rem; /* Equivalent to w-32 */
+  }
+  
+  .linksContainer {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem; /* Equivalent to mt-5 */
+  }
+  
+  .link {
+    color: #fff;
+    font-size: 1rem; /* Equivalent to text-base */
+    text-align: center;
+    margin: 0.5rem; /* Equivalent to mx-2 */
+    cursor: pointer;
+  }
+  
+  .infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; /* Equivalent to mt-5 */
+  }
+  
+  .infoText {
+    color: #fff;
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    text-align: center;
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+  }
+  
+  .infoEmail {
+    color: #fff;
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    text-align: center;
+    font-weight: 500; /* Equivalent to font-medium */
+    margin-top: 0.5rem; /* Equivalent to mt-2 */
+  }
+  
+  .separator {
+    width: 90%;
+    height: 0.125rem; /* Equivalent to h-[0.25px] */
+    background-color: #ccc; /* Equivalent to bg-gray-400 */
+    margin-top: 1rem; /* Equivalent to mt-5 */
+  }
+  
+  .footerText {
+    color: #fff;
+    font-size: 0.75rem; /* Equivalent to text-xs */
+    text-align: center;
+  }
+  
+  .copyRight {
+    text-align: right;
+  }

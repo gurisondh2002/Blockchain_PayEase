@@ -1,0 +1,249 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    flex-wrap: wrap;
+
+  }
+  
+  .mainFlexContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    /* margin-left: 150px; */
+    gap:20px;
+    padding-bottom: 12px;
+    padding-left: 4px;
+  }
+  
+  .innerFlexContainer {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    margin-right: 10px; 
+  }
+  
+  .title {
+    font-size: 2.5rem;
+  }
+
+.description {
+    margin-top: -0.1rem;
+    color: white;
+    font-weight: lighter; 
+    max-width: calc(75% - 1rem); 
+    width: calc(91% - 1rem);
+    font-size: 1.5rem;
+  }
+  
+  .connectButton {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.25rem;
+    background-color: #2952e3;
+    padding: 0.75rem; 
+    border-radius: 9999px; 
+    cursor: pointer;
+  }
+  
+  .connectButton:hover {
+    background-color: #2546bd;
+  }
+  
+  .connectButtonIcon {
+    color: white; 
+    margin-right: 0.5rem; 
+  }
+  
+  .connectButtonText {
+    color: white; 
+    font-size: 1rem; 
+    font-weight: 600; 
+  }
+  
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  td, th {
+    border: 1px solid gray;
+    padding: 8px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+  }
+
+  .roundedTopLeft {
+    border-top-left-radius: 10px;
+  }
+
+  .roundedTopRight {
+    border-top-right-radius: 0.375rem;
+  }
+
+  .roundedBottomLeft {
+    border-bottom-left-radius: 0.375rem;
+  }
+
+  .roundedBottomRight {
+    border-bottom-right-radius: 0.375rem;
+  }
+  
+  .cont {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    justify-content: flex-start;
+    /* width: 80%;  */
+    /* margin-top: 2.5rem;  */
+    /* margin-right: 150px; */
+  }
+
+  .cardContainer {
+    padding: 0.75rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    border-radius: 20px;
+    height: 130px;
+    width: 70%;
+    margin-top: 1.25rem;
+  }
+  
+  .innerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .flexRow {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .roundedFull {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+  
+  .roundedFullBorder {
+    border-width: 2px;
+    border-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textWhite {
+    color: #ffffff;
+  }
+  
+  .fontLight {
+    font-weight: 300;
+  }
+  
+  .fontSemibold {
+    font-weight: 600;
+  }
+
+  .inputBoxContainer {
+    padding: 1.25rem;
+    width: 100%;
+    max-width: 30rem; /* sm:w-96 */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .input {
+    margin-top: 0.5rem; /* my-2 */
+    width: 100%;
+    border-radius: 0.125rem; /* rounded-sm */
+    padding: 0.5rem; /* p-2 */
+    outline: none;
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 0.875rem; /* text-sm */
+  }
+  
+  .input::placeholder {
+    color: white;
+  }
+  
+  .separator {
+    height: 1px;
+    width: 100%;
+    background-color: #cbd5e0; /* bg-gray-400 */
+    margin-top: 0.5rem; /* my-2 */
+  }
+  
+  .button {
+    color: white;
+    width: 100%;
+    margin-top: 0.5rem; /* mt-2 */
+    border: 1px solid #3d4f7c; /* border-[1px] */
+    padding: 0.5rem; /* p-2 */
+    border-radius: 9999px; /* rounded-full */
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #3d4f7c; /* hover:bg-[#3d4f7c] */
+  }
+  
+
+  @media screen and (max-width: 540px) {
+    .mainFlexContainer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      flex-wrap: wrap;
+      /* margin-left: 150px; */
+      gap:20px;
+      padding-bottom: 12px;
+      padding-left: 4px;
+    }
+
+    .innerFlexContainer {
+      display: flex;
+      flex: 1;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin-right: 10px; 
+    }
+    .cardContainer {
+      padding: 0.75rem;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-start;
+      flex-direction: column;
+      border-radius: 20px;
+      height: 130px;
+      width: 90%;
+      margin-top: 1.25rem;
+    }
+  }
+  
