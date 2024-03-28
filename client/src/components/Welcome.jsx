@@ -10,6 +10,7 @@ import Loader from "./Loader";
 const Welcome = () => {
 
   const { connectWallet, connectedAccount, formData, handleChange, sendTransaction, isLoading } = useContext(TransactionContext);
+  const isAndroid = /android/i.test(navigator.userAgent);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -40,14 +41,25 @@ const Welcome = () => {
             Explore the crypto world. Buy and sell cryptocurrencies easily on PayEase.
           </p>
           {!connectedAccount && (
-            <button
-              type="button"
-              onClick={connectWallet}
-              className={`${styles.connectButton}`}
-            >
-              <AiFillPlayCircle className={`${styles.connectButtonIcon}`} />
-              <p className={`${styles.connectButtonText}`}>Connect Wallet</p>
-            </button>
+            <div>
+              <button
+                type="button"
+                onClick={connectWallet}
+                className={`${styles.connectButton}`}
+              >
+                <AiFillPlayCircle className={`${styles.connectButtonIcon}`} />
+                <p className={`${styles.connectButtonText}`}>Connect Wallet</p>
+              </button>
+              {isAndroid &&
+                <button
+                  type="button"
+                  onClick={connectWallet}
+                  className={`${styles.connectButton}`}>
+                  <a href="https://metamask.app.link/dapp/payease.netlify.app/" className={`${styles.connectButtonText}`}>Click for Mobile</a>
+                </button>
+              }
+            </div>
+
           )}
           <br />
           <table>
@@ -97,7 +109,7 @@ const Welcome = () => {
               </div>
             </div>
           </div>
-          <br/>
+          <br />
           <div className={`${styles.inputBoxContainer} blue-glassmorphism`}>
             <input
               placeholder="Address To"

@@ -225,6 +225,11 @@
       padding-bottom: 12px;
       padding-left: 4px;
     }
+    .title {
+      font-size: 2.5rem;
+      align-items: center;
+      margin-left: 35px;
+    }
 
     .innerFlexContainer {
       display: flex;
